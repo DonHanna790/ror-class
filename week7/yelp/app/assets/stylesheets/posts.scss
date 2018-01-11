@@ -1,0 +1,33 @@
+header {
+        left: 50%;
+        margin-left: -500px;
+        background-image: url(https://static.pexels.com/photos/6267/menu-restaurant-vintage-table.jpg) no-repeat;
+        width:1000px;
+        height:200px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica;
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+body {
+      background-color: lightgrey;
+      background-position: center;
+}
+
+table {
+        width: 100%;
+        border-collapse: collapse;
+}
+
+table, th, td {
+                height: 50px;
+                padding: 15px;
+                text-align: center;
+                border: 1px solid black;
+}

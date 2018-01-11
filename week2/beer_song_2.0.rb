@@ -1,12 +1,10 @@
 class Beer
-    def initialize(bottles)
-      @bottles = bottles
-    end
+  def initialize(bottles)
+    @bottles = bottles
+  end
 
   def song
-    @bottles = 99
-        while @bottles > 0
-
+    while @bottles > 0
         puts @bottles.to_s + " bottles of beer on the wall. " + @bottles.to_s +
         " bottles of beer."
 
@@ -18,6 +16,6 @@ class Beer
   end
 end
 
-beer = Beer.new(@bottles)
+beer = Beer.new("99")
 
 beer.song

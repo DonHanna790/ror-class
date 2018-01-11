@@ -1,0 +1,29 @@
+<h1>Yelp!</h1>
+<hr>
+<hr>
+<h2>Listing all Reviews</h2>
+
+<table>
+  <tr>
+    <th>Restaurant</th>
+    <th>Review</th>
+    <th colspan="2"></th>
+  </tr>
+
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.restaurant %></td>
+      <td><%= post.review %></td>
+      <td><%= link_to 'Show', post_path(post) %></td>
+      <td><%= link_to 'Edit', post_path(post) %></td>
+      <td><%= link_to 'Delete', post_path(post),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<hr>
+<hr>
+
+<%= link_to 'Make a Review', new_post_path %>
